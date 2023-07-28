@@ -47,3 +47,35 @@ window.addEventListener('scroll', function () {
     }
 });
 
+document.querySelector(".dropdown-language__btn").addEventListener("click", function () {
+    document.querySelector(".dropdown-language__content").classList.toggle("open");
+    document.querySelector(".dropdown-language__arrow").classList.toggle("open");
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const preloaderWrapper = document.querySelector(".preloader-wrapper");
+    const body = document.querySelector("body");
+
+    // После завершения анимации preloader'а, скрываем preloader и удаляем блокировку скроллинга
+    setTimeout(function () {
+        preloaderWrapper.classList.add("preloader-wrapper__hidden");
+        body.classList.remove("anti-scroll");
+    }, 2000);
+});
+
+const headerBtn = document.querySelector(".header-wrapper__btn");
+const headerPopupBg = document.querySelector(".header-wrapper__popup-bg")
+const headerPopup = document.querySelector(".header-wrapper__popup");
+headerBtn.addEventListener("click", () => {
+    headerPopup.classList.add("open");
+    document.querySelector("body").classList.add("anti-scroll");
+});
+headerPopupBg.addEventListener("click", () => {
+    headerPopup.classList.remove("open");
+    document.querySelector("body").classList.remove("anti-scroll");
+});
+document.querySelector('.burger-menu').addEventListener("click", () => {
+    document.querySelector('.burger-menu').classList.toggle('active');
+    document.querySelector('.navigation__menu').classList.toggle('active');
+})
+

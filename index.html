@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -10,33 +10,127 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=Jura:wght@400;700&display=swap"
         rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon 1.svg" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/apple-touch.svg">
     <title>My Site</title>
 </head>
 
-<body>
-    <div class="navigation">
-        <div class="dropdown-language">
-            <div class="dropdown-language__btn">
-                <span>RUS</span>
-                <img src="img/arrow-down.svg" alt="*">
-            </div>
-            <div class="dropdown-language__content">
-                <a href="#">RUS</a>
-                <a href="#">ENG</a>
-                <a href="#">UKR</a>
+<body class="anti-scroll">
+    <div class="preloader-wrapper">
+        <div class="pl">
+            <svg class="pl__rings" viewBox="0 0 128 128" width="128px" height="128px">
+                <g fill="none" stroke-linecap="round" stroke-width="4">
+                    <g class="pl__ring" transform="rotate(0)">
+                        <ellipse class="pl__orbit" cx="64" cy="64" rx="60" ry="30" stroke="hsla(223,90%,50%,0.3)" />
+                        <ellipse class="pl__orbit" cx="64" cy="64" rx="60" ry="30" stroke="hsla(223,90%,50%,0.5)"
+                            stroke-dasharray="50 240" />
+                        <ellipse class="pl__orbit" cx="64" cy="64" rx="60" ry="30" stroke="hsl(223,90%,50%)"
+                            stroke-dasharray="25 265" />
+                    </g>
+                    <g class="pl__ring" transform="rotate(0)">
+                        <ellipse class="pl__orbit" cx="64" cy="64" rx="60" ry="30" stroke="hsla(223,90%,50%,0)" />
+                        <ellipse class="pl__orbit" cx="64" cy="64" rx="60" ry="30" stroke="hsla(223,90%,50%,0.5)"
+                            stroke-dasharray="50 240" />
+                        <ellipse class="pl__orbit" cx="64" cy="64" rx="60" ry="30" stroke="hsl(223,90%,50%)"
+                            stroke-dasharray="25 265" />
+                    </g>
+                    <g class="pl__ring" transform="rotate(0)">
+                        <ellipse class="pl__orbit" cx="64" cy="64" rx="60" ry="30" stroke="hsla(223,90%,50%,0)" />
+                        <ellipse class="pl__orbit" cx="64" cy="64" rx="60" ry="30" stroke="hsla(223,90%,50%,0.5)"
+                            stroke-dasharray="50 240" />
+                        <ellipse class="pl__orbit" cx="64" cy="64" rx="60" ry="30" stroke="hsl(223,90%,50%)"
+                            stroke-dasharray="25 265" />
+                    </g>
+                    <g class="pl__ring" transform="rotate(0)">
+                        <ellipse class="pl__orbit" cx="64" cy="64" rx="60" ry="30" stroke="hsla(223,90%,50%,0)" />
+                        <ellipse class="pl__orbit" cx="64" cy="64" rx="60" ry="30" stroke="hsla(223,90%,50%,0.5)"
+                            stroke-dasharray="50 240" />
+                        <ellipse class="pl__orbit" cx="64" cy="64" rx="60" ry="30" stroke="hsl(223,90%,50%)"
+                            stroke-dasharray="25 265" />
+                    </g>
+                    <g class="pl__ring" transform="rotate(180)">
+                        <ellipse class="pl__orbit" cx="64" cy="64" rx="60" ry="30" stroke="hsla(223,90%,50%,0.3)" />
+                        <ellipse class="pl__orbit" cx="64" cy="64" rx="60" ry="30" stroke="hsla(223,90%,50%,0.5)"
+                            stroke-dasharray="50 240" />
+                        <ellipse class="pl__orbit" cx="64" cy="64" rx="60" ry="30" stroke="hsl(223,90%,50%)"
+                            stroke-dasharray="25 265" />
+                    </g>
+                    <g class="pl__ring" transform="rotate(180)">
+                        <ellipse class="pl__orbit" cx="64" cy="64" rx="60" ry="30" stroke="hsla(223,90%,50%,0)" />
+                        <ellipse class="pl__orbit" cx="64" cy="64" rx="60" ry="30" stroke="hsla(223,90%,50%,0.5)"
+                            stroke-dasharray="50 240" />
+                        <ellipse class="pl__orbit" cx="64" cy="64" rx="60" ry="30" stroke="hsl(223,90%,50%)"
+                            stroke-dasharray="25 265" />
+                    </g>
+                    <g class="pl__ring" transform="rotate(0)">
+                        <ellipse class="pl__electron" cx="64" cy="64" rx="60" ry="30" stroke="hsl(0,0%,100%)"
+                            stroke-dasharray="1 289" stroke-width="8" />
+                        <ellipse class="pl__electron" cx="64" cy="64" rx="60" ry="30" stroke="hsl(0,0%,100%)"
+                            stroke-dasharray="1 289" stroke-width="8" />
+                    </g>
+                    <g class="pl__ring" transform="rotate(180)">
+                        <ellipse class="pl__electron" cx="64" cy="64" rx="60" ry="30" stroke="hsl(0,0%,100%)"
+                            stroke-dasharray="1 289" stroke-width="8" />
+                        <ellipse class="pl__electron" cx="64" cy="64" rx="60" ry="30" stroke="hsl(0,0%,100%)"
+                            stroke-dasharray="1 289" stroke-width="8" />
+                        <ellipse class="pl__electron" cx="64" cy="64" rx="60" ry="30" stroke="hsl(0,0%,100%)"
+                            stroke-dasharray="1 289" stroke-width="8" />
+                        <ellipse class="pl__electron" cx="64" cy="64" rx="60" ry="30" stroke="hsl(0,0%,100%)"
+                            stroke-dasharray="1 289" stroke-width="8" />
+                    </g>
+                </g>
+            </svg>
+            <div class="pl__nucleus">
+                <div class="pl__nucleus-particle"></div>
+                <div class="pl__nucleus-particle"></div>
+                <div class="pl__nucleus-particle"></div>
+                <div class="pl__nucleus-particle"></div>
+                <div class="pl__nucleus-particle"></div>
+                <div class="pl__nucleus-particle"></div>
+                <div class="pl__nucleus-particle"></div>
+                <div class="pl__nucleus-particle"></div>
+                <div class="pl__nucleus-particle"></div>
+                <div class="pl__nucleus-particle"></div>
+                <div class="pl__nucleus-particle"></div>
+                <div class="pl__nucleus-particle"></div>
+                <div class="pl__nucleus-particle"></div>
             </div>
         </div>
-        <ul class="media">
-            <li class="media__item"><a href="#"><img src="img/behance.svg" alt="#"></a></li>
-            <li class="media__item"><a href="#"><img src="img/tik-icon.svg" alt="#"></a></li>
-            <li class="media__item"><a href="#"><img src="img/insta-icon.svg" alt="#"></a></li>
-        </ul>
-        <ul class="nav-menu">
-            <li class="nav-menu__item nav-menu__item_active"><a href="#header">ГЛАВНАЯ</a></li>
-            <li class="nav-menu__item"><a href="#my-work">МОИ РАБОТЫ</a></li>
-            <li class="nav-menu__item"><a href="#certeficate">СЕРТИФИКАТЫ</a></li>
-            <li class="nav-menu__item"><a href="#footer">КОНТАКТЫ</a></li>
-        </ul>
+    </div>
+    <div class="navigation">
+        <div class="burger-menu">
+            <span></span>
+        </div>
+        <div class="navigation__menu">
+            <div class="dropdown-language">
+                <div class="dropdown-language__btn">
+                    <span>rus</span>
+                    <img class="dropdown-language__arrow" src="img/arrow-down.svg" alt="#">
+                </div>
+                <div class="dropdown-language__content">
+                    <a href="#">rus</a>
+                    <a href="#">eng</a>
+                    <a href="#">ua</a>
+                </div>
+            </div>
+
+            <ul class="media">
+                <li class="media__item"><a target="_blank" href="https://www.behance.net/DesignFreelanceNV"><img
+                            src="img/behance.svg" alt="#"></a></li>
+                <li class="media__item"><a target="_blank"
+                        href="https://www.tiktok.com/@frontenddevolepernv?_t=8eBVCmUS4Qf&_r=1"><img
+                            src="img/tik-icon.svg" alt="#"></a></li>
+                <li class="media__item"><a target="_blank"
+                        href="https://instagram.com/frontenddevelopernv?igshid=OGQ5ZDc2ODk2ZA=="><img
+                            src="img/insta-icon.svg" alt="#"></a></li>
+            </ul>
+            <ul class="nav-menu">
+                <li class="nav-menu__item nav-menu__item_active"><a href="#header">ГЛАВНАЯ</a></li>
+                <li class="nav-menu__item"><a href="#my-work">МОИ РАБОТЫ</a></li>
+                <li class="nav-menu__item"><a href="#certeficate">СЕРТИФИКАТЫ</a></li>
+                <li class="nav-menu__item"><a href="#footer">КОНТАКТЫ</a></li>
+            </ul>
+        </div>
     </div>
     <header id="header" class="section header">
         <img src="img/22.svg" alt="#" class="header-bg-shadow">
@@ -54,6 +148,17 @@
                         профессионализм в своей работе, а также на постоянное развитие своих навыков и умений.
                     </p>
                     <button class="header-wrapper__btn">связаться со мной</button>
+                    <div class="header-wrapper__popup">
+                        <div class="header-wrapper__popup-bg"></div>
+                        <form action="#" class="form-wrapper">
+                            <div class="form-wrapper__content">
+                                <input type="text" placeholder="ПОЧТА">
+                                <input type="text" placeholder="ИМЯ">
+                                <input type="text" placeholder="ФАМИЛИЯ">
+                            </div>
+                            <button type="submit">связаться со мной</button>
+                        </form>
+                    </div>
                 </div>
                 <img class="header-wrapper__img" src="img/img-header.png" alt="#">
             </div>
@@ -158,8 +263,8 @@
             <hr>
         </div>
         <div class="container">
-            <form action="#" class="footer-wrapper">
-                <div class="footer-wrapper__content">
+            <form action="#" class="form-wrapper">
+                <div class="form-wrapper__content">
                     <input type="text" placeholder="ПОЧТА">
                     <input type="text" placeholder="ИМЯ">
                     <input type="text" placeholder="ФАМИЛИЯ">
@@ -167,6 +272,7 @@
                 <button type="submit">связаться со мной</button>
             </form>
         </div>
+        <div class="footer-whave"></div>
     </footer>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="js/main.js"></script>
