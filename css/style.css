@@ -971,11 +971,11 @@ body.anti-scroll {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 3.125rem;
 }
 .certeficate .certeficate-wrapper__title {
   color: rgba(70, 49, 39, 0.75);
   text-shadow: -1px 1px 3px rgba(0, 0, 0, 0.64), -4px 3px 5px rgba(0, 0, 0, 0.55), -10px 6px 7px rgba(0, 0, 0, 0.33), -17px 11px 8px rgba(0, 0, 0, 0.1), -27px 17px 9px rgba(0, 0, 0, 0.01);
-  font-size: 3.2rem;
   font-weight: 700;
   margin-bottom: 108px;
 }
@@ -986,6 +986,10 @@ body.anti-scroll {
   gap: 94px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+.certeficate .certeficate-wrapper .certeficate-content__item {
+  max-width: 450px;
+  aspect-ratio: 2481/3508;
 }
 .certeficate .certeficate-wrapper .certeficate-content__item a {
   position: relative;
@@ -999,25 +1003,25 @@ body.anti-scroll {
   transition: transform 0.4s ease, filter 0.4s ease, -webkit-transform 0.4s ease, -webkit-filter 0.4s ease;
 }
 .certeficate .certeficate-wrapper .certeficate-content__item a img {
+  aspect-ratio: 2481/3508;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 .certeficate .certeficate-wrapper .certeficate-content__item a button {
-  font-size: 1.25rem;
+  font-size: 1em;
   padding: 0;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 114px;
-  height: 114px;
+  width: 1.48em;
+  height: 1.48em;
   border: 0;
-  background-size: cover;
-  background-color: transparent;
   background: url(../img/eye.svg) no-repeat;
+  background-size: cover;
   opacity: 0;
   -webkit-transition: opacity 0.4s ease;
   transition: opacity 0.4s ease;
@@ -1057,6 +1061,7 @@ body.anti-scroll {
   background: #343434;
   -webkit-box-shadow: 0px 4px 37px 20px rgba(0, 0, 0, 0.25) inset;
           box-shadow: 0px 4px 37px 20px rgba(0, 0, 0, 0.25) inset;
+  font-size: 1.25rem;
 }
 .form-wrapper .form-wrapper__content {
   display: -webkit-box;
@@ -1073,12 +1078,13 @@ body.anti-scroll {
   gap: 100px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  font-size: 1em;
 }
 .form-wrapper .form-wrapper__content input {
   outline: none;
   width: 420px;
-  padding: 17px 0 18px;
-  font-size: 1.2rem;
+  padding: 0.85em 0;
+  font-size: 1em;
   background: transparent;
   border: 0;
   border-bottom: 1px solid rgb(255, 255, 255);
@@ -1112,7 +1118,7 @@ body.anti-scroll {
   border: 0;
   background: var(--button, linear-gradient(180deg, #B09BED 0%, #ED9B9B 0.01%, rgba(178, 19, 163, 0.62) 100%));
   color: #FFF;
-  font-size: 20px;
+  font-size: 1em;
   font-family: Jura;
   font-style: normal;
   font-weight: 700;
@@ -1298,8 +1304,16 @@ body.anti-scroll {
   .header .header-wrapper__text {
     font-size: 1rem;
   }
+  .form-wrapper {
+    gap: 3.3333333333em;
+    font-size: 0.9375rem;
+  }
+  .form-wrapper .form-wrapper__content {
+    font-size: 1em;
+  }
   .form-wrapper button {
     width: 100%;
+    font-size: 1em;
   }
   .form-wrapper__content input {
     width: 100% !important;
@@ -1308,7 +1322,7 @@ body.anti-scroll {
     display: grid !important;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
-  .certeficate-wrapper__title {
-    font-size: 2.3rem !important;
+  .certeficate-wrapper {
+    font-size: 2.1875rem !important;
   }
 }

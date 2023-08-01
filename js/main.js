@@ -78,4 +78,3 @@ document.querySelector('.burger-menu').addEventListener("click", () => {
     document.querySelector('.burger-menu').classList.toggle('active');
     document.querySelector('.navigation__menu').classList.toggle('active');
 })
-
