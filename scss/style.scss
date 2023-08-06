@@ -511,7 +511,7 @@ body.anti-scroll {
                 a {
                     position: relative;
                     display: block;
-                    max-width: 450px;
+                    width: 100%;
 
 
                     img {
@@ -654,6 +654,11 @@ body.anti-scroll {
         margin-top: 0;
         padding: 35px 60px;
 
+        &.active {
+            height: 100%;
+            overflow-y: scroll;
+        }
+
         .navigation__menu {
             display: none !important;
 
@@ -746,7 +751,6 @@ body.anti-scroll {
         }
     }
 
-    .header-wrapper {}
 }
 
 @media (max-width: 992px) {
@@ -842,5 +846,9 @@ body.anti-scroll {
         font-size: 2.1875rem !important;
 
         &__title {}
+
+        .certeficate-content {
+            gap: 30px !important;
+        }
     }
 }

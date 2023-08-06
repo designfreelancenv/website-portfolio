@@ -1,14 +1,46 @@
-var typed = new Typed('.header-wrapper__text-typing', {
-    strings: [
-        'Никита Винниченко',
-        'Веб-разработчик',
-        'Фрилансер',
-    ],
-    startDelay: 50,
-    typeSpeed: 50,
-    backSpeed: 50,
-    loop: true,
-});
+
+const currentName = document.getElementById('header-wrapper__text-typing');
+if (currentName.classList.contains('header-wrapper__text-typing_eng')) {
+    // Если класс совпадает, то выполним функцию с использованием библиотеки Typed.js
+    var typed = new Typed('.header-wrapper__text-typing_eng', {
+        strings: [
+            'Nikita Vinnichenko',
+            'Web Developer',
+            'Freelancer',
+        ],
+        startDelay: 50,
+        typeSpeed: 50,
+        backSpeed: 50,
+        loop: true,
+    });
+} else if (currentName.classList.contains('header-wrapper__text-typing_ua')) {
+    var typed = new Typed('.header-wrapper__text-typing_ua', {
+        strings: [
+            'Микита Вінниченко',
+            'Веб-розробник',
+            'Фрілансер',
+        ],
+        startDelay: 50,
+        typeSpeed: 50,
+        backSpeed: 50,
+        loop: true,
+    });
+} else if (currentName.classList.contains('header-wrapper__text-typing')) {
+    var typed = new Typed('.header-wrapper__text-typing', {
+        strings: [
+            'Никита Винниченко',
+            'Веб-разработчик',
+            'Фрилансер',
+        ],
+        startDelay: 50,
+        typeSpeed: 50,
+        backSpeed: 50,
+        loop: true,
+    });
+}
+
+
+
 
 window.addEventListener('scroll', function () {
     var navMenu = document.querySelector('.navigation');
@@ -77,4 +109,7 @@ headerPopupBg.addEventListener("click", () => {
 document.querySelector('.burger-menu').addEventListener("click", () => {
     document.querySelector('.burger-menu').classList.toggle('active');
     document.querySelector('.navigation__menu').classList.toggle('active');
+    document.querySelector('.navigation').classList.toggle('active');
+    document.querySelector("body").classList.toggle("anti-scroll");
 })
+
